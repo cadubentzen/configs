@@ -9,7 +9,6 @@ OUTPUT = $(addprefix $(HOME)/,$(HIDDEN))
 UNAME = $(shell uname)
 
 PROGRAMS = zsh  \
-		   vim  \
 		   tmux \
 		   curl
 
@@ -20,10 +19,14 @@ else ifeq ($(UNAME),Darwin)
 	brew install $(PROGRAMS)
 else
 	$(error OS must be either Linux or Mac OS X)
-endif	
-	sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+endif
+	chsh -s $(which zsh)
+	@echo "Now Log out and log in"
 
-install: $(HIDDEN)
+oh-my-zsh:
+	sh -c "$$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+install:  $(HIDDEN)
 
 .%: %
 	cp -a $< $(HOME)/$@ 

@@ -7,17 +7,8 @@ This repository contains my configuration files for Oh-my-zsh, Tmux and Vim, jus
 #### Ubuntu
 
 ```
-$ sudo make download
-$ make install
-```
-
-#### Mac OS X
-
-Requirements:
-- Homebrew
-
-```
-$ make download
+$ sudo make download # Afterwards, log out and log in again
+$ make oh-my-zsh
 $ make install
 ```
 
