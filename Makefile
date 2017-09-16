@@ -20,7 +20,7 @@ else ifeq ($(UNAME),Darwin)
 else
 	$(error OS must be either Linux or Mac OS X)
 endif
-	chsh -s $(which zsh)
+	chsh -s $$(which zsh)
 	@echo "Now Log out and log in"
 
 oh-my-zsh:
