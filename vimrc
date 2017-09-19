@@ -3,7 +3,8 @@ set number
 
 set backspace=indent,eol,start
 
-set noet sts=0 sw=4 ts=4
+
+set expandtab sts=0 sw=4 ts=4
 set cindent
 set cinoptions=(0,u0,U0
 
