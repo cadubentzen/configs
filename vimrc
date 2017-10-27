@@ -9,6 +9,8 @@ set clipboard=unnamedplus
 
 set wildmode=longest,list
 
+set incsearch
+
 set expandtab sts=0 sw=4 ts=4
 set cindent
 set cinoptions=(0,u0,U0
