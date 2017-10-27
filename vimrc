@@ -4,6 +4,10 @@ set number
 
 set backspace=indent,eol,start
 
+" First check if vim has clipboard support
+set clipboard=unnamedplus
+
+set wildmode=longest,list
 
 set expandtab sts=0 sw=4 ts=4
 set cindent
