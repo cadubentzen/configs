@@ -1,16 +1,14 @@
-# Configuration files for Oh-my-zsh, Tmux and Vim
+# My configuration files
 
-This repository contains my configuration files for Oh-my-zsh, Tmux and Vim, just in order to make my life easier when migrating to another computer.
+This repository contains my configuration files for vim and (to be organized) oh-my-zsh and tmux.
+
+## Vim
+
+I use the [vim-plug](https://github.com/junegunn/vim-plug) as a plugin manager, so go on and install it before using vim.
 
 ## Installation
-
-#### Ubuntu
-
 ```
-$ sudo make download 
-$ make install
+$ ln -s $(pwd)/vimrc ~/.vimrc
+$ ln -s $(pwd)/gvimrc ~/.gvimrc
 ```
-
-## TODO
-- Currently, Ubuntu is detected via `ifeq ($(UNAME),Linux)`, change this later to detect more distros such as Arch Linux.
 

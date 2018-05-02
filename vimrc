@@ -32,8 +32,6 @@ set cinoptions=(0,u0,U0
 set laststatus=2
 set showtabline=2 " Always display the tabline, even if there is only one tab
 
-set mouse=a
-
 " Changing tabs
 nnoremap tl :tabnext<CR>
 nnoremap th :tabprev<CR>
