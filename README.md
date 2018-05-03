@@ -11,4 +11,3 @@ I use the [vim-plug](https://github.com/junegunn/vim-plug) as a plugin manager, 
 $ ln -s $(pwd)/vimrc ~/.vimrc
 $ ln -s $(pwd)/gvimrc ~/.gvimrc
 ```
-

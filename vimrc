@@ -1,6 +1,3 @@
-" Specify a directory for plugins
-" - For Neovim: ~/.local/share/nvim/plugged
-" - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
@@ -13,6 +10,7 @@ Plug 'junegunn/fzf'
 Plug 'thaerkh/vim-workspace'
 Plug 'Valloric/YouCompleteMe'
 Plug 'scrooloose/nerdcommenter'
+Plug 'ntpeters/vim-better-whitespace'
 
 " Initialize plugin system
 call plug#end()
@@ -20,6 +18,8 @@ call plug#end()
 set background=dark
 syntax on
 set number
+
+set clipboard=unnamedplus
 
 set backspace=indent,eol,start
 set wildmode=longest,list
@@ -38,8 +38,15 @@ nnoremap th :tabprev<CR>
 nnoremap tn :tabnew<CR>
 nnoremap tc :tabclose<CR>
 
-nmap <C-n> :NERDTreeToggle<CR>
-nmap <C-f> :FZF<CR>
+" For NerdTree
+map <C-n> :NERDTreeToggle<CR>
 
-nnoremap tw :ToggleWorkspace<CR>
+" For fzf
+map <C-f> :FZF<CR>
+
+" For git difftool to edit files
+set noro
+
+" For vim-workspace
+nnoremap ws :ToggleWorkspace<CR>
 
